@@ -5,6 +5,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Scrolling smoothly */
+html {
+    scroll-behavior: smooth;
+}
+
 /*Header Title */
 .header-title {
     display: inline-block;    
@@ -64,17 +69,20 @@ header {
     margin-top: 0px;
 }
 
-/* Team color coding for each driver */
-.hamilton {
-    color: #00d2be; /* Mercedes teal */
+/* Driver links section */
+.hamilton a {
+    color: #00d2be; /* Mercedes Teal */
+    text-decoration: none;
 }
 
-.schumacher {
-    color: #ff0000; /* Ferrari red */
+.schumacher a {
+    color: #ff0000; /* Ferrari Red */
+    text-decoration: none;
 }
 
-.senna {
-    color: #ff8700; /* McLaren orange */
+.senna a {
+    color:#ff8700; /* McLaren Orange */
+    text-decoration: none;
 }
 
 /* About my favorite drivers box*/
@@ -98,9 +106,10 @@ header {
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
-    max-width: 500px;
+    max-width: 1200px;
     text-align: center;
     background-color: #1e2124;
+    font-size: 24px;
 }
 
 /* Lewis Hamilton's race number styling */
@@ -118,15 +127,46 @@ header {
 
 .hamilton-card h3 {
     color: #00d2be;
+    font-size: 30px;
 }
 
 .hamilton-card p {
     color: #e0e0e0;
 }
 
-.hamilton-card img {
+/* Lewis Hamilton Pictures and W11*/
+.hamilton-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hamilton-images figure {
     border-radius: 10px;
-    margin: 10px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.hamilton-images img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.hamilton-images figcaption {
+    color: #e0e0e0;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.w11-figure {
+    margin-top: 80px;
+}
+
+.w11-figure img {
+    border: 2px solid #00d2be;
 }
 
 /* Michael Schumacher Card */
@@ -136,9 +176,10 @@ header {
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
-    max-width: 500px;
+    max-width: 1200px;
     text-align: center;
     background-color:#1e2124;
+    font-size: 24px;
 }
 
 /* Michael Schumacher's race number styling */
@@ -156,6 +197,7 @@ header {
 
 .schumacher-card h3 {
     color: #ff0000;
+    font-size: 30px;
 }
 
 .schumacher-card p {
@@ -167,6 +209,45 @@ header {
     margin: 10px 0;
 }
 
+/* Michael Schumacher Pictures and F2004 */
+.schumacher-images{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.schumacher-images figure {
+    margin: 0;
+}
+
+.schumacher-images img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.schumacher-images figcaption {
+    color: #e0e0e0;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: auto;
+}
+
+.schumacher-images .f2004-figure {
+    margin-top: 110px;
+}
+
+.schumacher-images .f2004-figure img {
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+}
+
+.schumacher-images .f2004-figure img {
+    max-width: 500px;
+}
+
 /* Ayrton Senna Card */
 .senna-card {
     position: relative;
@@ -174,9 +255,10 @@ header {
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
-    max-width: 500px;
+    max-width: 1200px;
     text-align: center;
     background-color:#1e2124;
+    font-size: 24px;
 }
 
 /* Ayrton Senna's race number styling */
@@ -194,10 +276,46 @@ header {
 
 .senna-card h3 {
     color: #ff8700;
+    font-size: 30px;
 }
 
 .senna-card p {
     color: #e0e0e0;
+}
+
+/* Ayrton Senna Picture and Car */
+.senna-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.senna-images figure {
+    margin: 0;
+}
+
+.senna-images img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.senna-images figcaption {
+    color: #e0e0e0;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.senna-images .mp4-figure {
+    margin-top: 85px;
+}
+
+.mp4-figure img {
+    border: 2px solid #ff8700;
+    border-radius: 10px;
 }
 
 /* My favorite car section */
