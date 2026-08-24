@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Formula 1</h1>
+        <div class="header-title">
+            <h1>Formula 1</h1>
+        </div>
     </header>
-    
-      <p class="tagline">I'm putting together this page to share why I love Formula 1 and some of my favorite drivers and teams.</p>
 
-    
+      <!--Short intro tagline under the title-->
+      <p class="tagline">I'm putting together this page to share why I love 
+        Formula 1 and some of my favorite drivers and teams.
+      </p>
+
+    <!-- Section explaining why I love Formula 1 -->
     <div class="love-section">
      <h2>Why I Love Formula 1</h2>
      
@@ -33,21 +39,88 @@
               season to season — that keeps me coming back.
             </p>
     </div>
-    
+
+    <!-- Section for favorite drivers -->
     <div class="drivers-section">
         <h2>My Favorite Drivers</h2>
-        <ul>
-            <li class="hamilton">Lewis Hamilton</li>
-            <li class="schumacher">Michael Schumacher</li>
-            <li class="senna">Ayrton Senna</li>
-        </ul>
+          <ul>
+              <li class="hamilton">Lewis Hamilton</li>
+              <li class="schumacher">Michael Schumacher</li>
+              <li class="senna">Ayrton Senna</li>
+          </ul>
     </div>
 
-    <h2>My Favorite Car</h2>
-     <figure>
-      <img src="Images/sennamp4.jpg" alt="McLaren MP4/8" width="600">
-       <figcaption><b><i>McLaren MP4/8 driven by Ayrton Senna</i></b></figcaption>
-     </figure>
+    <!-- Detailed profile cards for each driver -->
+    <div class="driver-profiles">
+
+        <div class="favorite-drivers">
+           <h2>About My Favorite Drivers</h2>
+        </div>
+
+        <!-- Lewis Hamilton Card -->
+         <div class="hamilton-card">
+            
+            <span class="hamilton-number">44</span>
+              
+              <h3>Lewis Hamilton</h3>
+                
+                <img src="Images/hamilton.png" alt="Lewis Hamilton" width="300">
+                
+                 <p>
+                   A 7-time World Champion, Hamilton dominated with Mercedes for over a
+                   decade, driving cars like the magnificent W11 - considered one of the most
+                   dominant F1 cars ever built. His skill, consistency, and ability to perform under
+                   pressure have made him a legend in the sport. He now races for Ferrari.
+                 </p>       
+         </div>
+         
+         <!-- Michael Schumacher Card -->
+         <div class="schumacher-card">
+             
+            <span class="schumacher-number">1</span>
+             
+             <h3>Michael Schumacher</h3>
+              
+              <img src="Images/schumacher.png" alt="Michael Schumacher" width="300">
+              
+                <p>
+                  A 7-time World Champion, Schumacher redefined Ferrari's fortunes in 
+                  the early 2000s, winning five consecutive titles from 2000 to 2004
+                  with cars like the legendary Ferrari F2004. His relentless pursuit 
+                  of perfection and unmatched work ethic made him one of the most 
+                  successful drivers in F1 history.                  
+                </p>       
+         </div>
+
+         <!-- Ayrton Senna Card -->
+         <div class="senna-card">
+
+            <span class="senna-number">12</span>
+
+              <h3>Ayrton Senna</h3>
+
+               <img src="Images/senna.png" alt="Ayrton Senna" width="300">
+                
+                <p>
+                  A 3-time World Champion known for his raw speed and rain-driving
+                  mastery. Senna won titles with McLaren, driving iconic cars like
+                  the MP4/4 and MP4/8 - the same car featured in the image below. 
+                  His legendary battles with Alain Prost and his tragic death at Imola
+                  in 1994 cemented his status as one of the greatest drivers in F1 history.
+                </p>       
+         </div>
+
+    </div>
+
+    <!-- Favorite Car Section and Senna's McLaren MP4/8 Image -->
+    <div class="favorite-car">
+    
+      <h2>My Favorite Car</h2>
+       <figure>
+        <img src="Images/sennamp4.jpg" alt="McLaren MP4/8" width="600">
+        <figcaption><b><i>McLaren MP4/8 driven by Ayrton Senna</i></b></figcaption>
+       </figure>
+    </div>
 
 </body>
 </html>
