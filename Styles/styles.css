@@ -1,14 +1,68 @@
 body {
-    background-color: #1a1a1a;
+    background-color: #ffffff;
     color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
 h1 {
-    color:#e10600;
+    display: inline-block;    
+    font-size: 150px;
+    background: linear-gradient(to right, #000000, #fd0000);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color: transparent;
+
 }
 
-h2 {
-    color:#e10600;
+header {
+    text-align: center;
     border-bottom: 2px solid #e10600;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 26px;
+    color:#ff1e00
+}
+
+.love-section {
+    text-align: center;
+    font-size: 24px;
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    color:#ff1e00;
+    border: 2px solid #ff1e00;
+    border-radius: 10px;
+    background-color: #b4b4b4;
+}
+
+.drivers-section {
+    text-align: center;
+    font-size: 24px;
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    color:#ff1e00;
+    border: 2px solid #ff1e00;
+    border-radius: 10px;
+    background-color: #b4b4b4;
+}
+
+.drivers-section ul {
+    display: inline-block;
+    text-align: left;
+    list-style-type: none;
+    margin-top: 0px;
+}
+
+.hamilton {
+    color: #00d2be;
+}
+
+.schumacher {
+    color: #ff0000;
+}
+
+.senna {
+    color: #ff8700;
 }
