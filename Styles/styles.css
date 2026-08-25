@@ -97,226 +97,133 @@ header {
     background-color: #1e2124;
 }
 
-/* Individual driver cards */
 
-/* Lewis Hamilton Card */
-.hamilton-card {
+/* Shared driver cards */
+.driver-card {
     position: relative;
-    border: 2px solid #00d2be;
+    border: 2px solid;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
     max-width: 1200px;
     text-align: center;
     background-color: #1e2124;
-    font-size: 24px;
 }
 
-/* Lewis Hamilton's race number styling */
-.hamilton-number {
+.driver-card h3 {
+    margin-top: 0;
+}
+
+.driver-card p {
+    color: #e0e0e0;
+    font-size: 20px;
+}
+
+/* Each driver's color (border and heading) */
+.hamilton-color {
+    border-color: #00d2be;
+}
+
+.hamilton-color h3 {
+    color: #00d2be;
+}
+
+.schumacher-color {
+    border-color: #ff0000;
+}
+
+.schumacher-color h3 {
+    color: #ff0000;
+}
+
+.senna-color {
+    border-color: #ff8700;
+}
+
+.senna-color h3 {
+    color: #ff8700;
+}
+
+
+/* Shared race number badge */
+.driver-number {
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 50px;
     font-weight: bold;
-    color:#ffffff;
-    background-color: #00d2be;
+    color: #ffffff;
     padding: 5px 12px;
     border-radius: 6px;
 }
 
-.hamilton-card h3 {
-    color: #00d2be;
-    font-size: 30px;
+.hamilton-color .driver-number {
+    background-color: #00d2be;
 }
 
-.hamilton-card p {
-    color: #e0e0e0;
+.schumacher-color .driver-number {
+    background-color: #ff0000;
 }
 
-/* Lewis Hamilton Pictures and W11*/
-.hamilton-images {
+.senna-color .driver-number {
+    background-color: #ff8700;
+}
+
+/* Shared image layout for all driver cards */
+.driver-images {
     display: flex;
     gap: 10px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
-.hamilton-images figure {
+.driver-images figure {
+    margin: 0;
+}
+
+.driver-images img {
     border-radius: 10px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 450px;
     height: auto;
 }
 
-.hamilton-images img {
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-}
-
-.hamilton-images figcaption {
+.driver-images figcaption {
     color: #e0e0e0;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 5px;
     text-align: center;
 }
 
-.w11-figure {
-    margin-top: 80px;
-}
+
+/* Individual car photo offsets and borders */
 
 .w11-figure img {
     border: 2px solid #00d2be;
-}
-
-/* Michael Schumacher Card */
-.schumacher-card {
-    position: relative;
-    border: 2px solid #ff0000;
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-    text-align: center;
-    background-color:#1e2124;
-    font-size: 24px;
-}
-
-/* Michael Schumacher's race number styling */
-.schumacher-number {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 50px;
-    font-weight: bold;
-    color:#ffffff;
-    background-color: #ff0000;
-    padding: 5px 12px;
-    border-radius: 6px;
-}
-
-.schumacher-card h3 {
-    color: #ff0000;
-    font-size: 30px;
-}
-
-.schumacher-card p {
-    color: #e0e0e0;
-}
-
-.schumacher-card img {
-    border-radius: 10px;
-    margin: 10px 0;
-}
-
-/* Michael Schumacher Pictures and F2004 */
-.schumacher-images{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.schumacher-images figure {
-    margin: 0;
-}
-
-.schumacher-images img {
-    border-radius: 10px;
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-}
-
-.schumacher-images figcaption {
-    color: #e0e0e0;
-    font-size: 20px;
-    margin-top: 5px;
-    text-align: auto;
-}
-
-.schumacher-images .f2004-figure {
-    margin-top: 110px;
-}
-
-.schumacher-images .f2004-figure img {
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-}
-
-.schumacher-images .f2004-figure img {
     max-width: 500px;
 }
 
-/* Ayrton Senna Card */
-.senna-card {
-    position: relative;
-    border: 2px solid #ff8700;
+.hamilton-portrait img {
+    max-width: 300px;
+}
+
+.schumacher-portrait img {
+    max-width: 300px;
+}
+
+.f2004-figure img {
+    border: 2px solid #ff0000;
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-    text-align: center;
-    background-color:#1e2124;
-    font-size: 24px;
+    max-width: 550px;
 }
 
-/* Ayrton Senna's race number styling */
-.senna-number {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 50px;
-    font-weight: bold;
-    color:#ffffff;
-    background-color: #ff8700;
-    padding: 5px 12px;
-    border-radius: 6px;
-}
-
-.senna-card h3 {
-    color: #ff8700;
-    font-size: 30px;
-}
-
-.senna-card p {
-    color: #e0e0e0;
-}
-
-/* Ayrton Senna Picture and Car */
-.senna-images {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.senna-images figure {
-    margin: 0;
-}
-
-.senna-images img {
-    border-radius: 10px;
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-}
-
-.senna-images figcaption {
-    color: #e0e0e0;
-    font-size: 20px;
-    margin-top: 5px;
-    text-align: center;
-}
-
-.senna-images .mp4-figure {
-    margin-top: 85px;
-}
 
 .mp4-figure img {
     border: 2px solid #ff8700;
     border-radius: 10px;
 }
+
 
 /* My favorite car section */
 .favorite-car {
@@ -342,6 +249,10 @@ header {
 .favorite-car figcaption {
     color: #e0e0e0;
     margin-top: 10px;
+}
+
+.favorite-car p {
+    font-size: 20px;
 }
 
 /*Footer*/
